@@ -1,0 +1,56 @@
+<div class="sort-section" *ngIf = "_commonUtilityService.selectedAction == 'sort'">
+  <div class="header">
+    <p class="header-heading">Sort by</p>
+  </div>
+  <mat-radio-group
+    aria-labelledby="sort-radio-group-label"
+    class="sort-radio-group"
+    [(ngModel)]="selectedSort"
+    name = "filterOptions">
+    <mat-radio-button class="sort-radio-button" *ngFor="let action of sortActions" [value]="action">
+      {{action}}
+    </mat-radio-button>
+  </mat-radio-group>
+
+  <div class="filter-action">
+      <button [disabled] = "!selectedSort" type="button" (click) ="filteFlights()" class="search-button" mat-raised-button color="primary">Done</button>
+  </div>
+</div>
+<div class="filter-section" *ngIf = "_commonUtilityService.selectedAction == 'filter'">
+  <div class="header">
+    <p class="header-heading">Filter by</p>
+  </div>
+  <div class="filter-content">
+    <mat-card class="filter-details">
+      <div  class="section-heading">
+          Price range
+      </div>
+      <mat-divider class="divider"></mat-divider>
+      <div class="price-range">
+        <mat-slider
+          thumbLabel
+          [displayWith]="formatLabel"
+          tickInterval="1000"
+          step="1000"
+          min="0"
+          max="100000"
+          aria-label="price range">
+        </mat-slider>
+      </div>
+    </mat-card>
+    <mat-card class="filter-details">
+      <div  class="section-heading">
+        Booking class
+      </div>
+      <mat-divider class="divider"></mat-divider>
+      <div class="class-section">
+        <mat-checkbox class="class-item" [(ngModel)]="economy">Economy</mat-checkbox>
+        <mat-checkbox class="class-item" [(ngModel)]="business">Business</mat-checkbox>
+      </div>
+    </mat-card>
+  </div>
+
+  <div class="filter-action">
+    <button type="button" [disabled] = "!class && !priceRange" (click) ="filteFlights()" class="search-button" mat-raised-button color="primary">Apply</button>
+</div>
+</div>

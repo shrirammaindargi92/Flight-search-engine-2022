@@ -1,0 +1,47 @@
+<div class="flight-list">
+    <mat-card *ngFor = "let flight of flightList" class="flight-details">
+        <div class="flight-airline-name">
+            {{flight.airlineName}}
+        </div>
+        <div class="search-row-1">
+            <div class="name-time-section">
+                <div class="flight-depart-time">
+                    {{flight.departureTime}}
+                </div>
+                <div class="flight-city">
+                    {{flight.sourceCity}}
+                </div>
+            </div>
+            <div>
+                    -----------------------------
+            </div>
+            <div>
+                <div class="flight-arrival-time">
+                    {{flight.arrivalTime}}
+                </div>
+                <div>
+                    {{flight.destinationCity}}
+                </div>
+            </div>
+
+        </div>
+        <div class="search-row-2">
+            <mat-card *ngFor = "let class of classList" class="class-name">
+                <div class="class-details">
+                    <div>$125</div>
+                    <div>{{class}}</div>
+                </div>
+
+                </mat-card>
+        </div>
+    </mat-card>
+</div>
+<mat-chip-list aria-label="action selection" class="action-panel">
+    <mat-chip color="primary" class="action-chip" (click) = "openSortBottomSheet()">
+      Sort by
+    </mat-chip>
+    <mat-chip color="primary" class="action-chip" (click) = "openFilterBottomSheet()">
+     Filter
+    </mat-chip>
+  </mat-chip-list>
+

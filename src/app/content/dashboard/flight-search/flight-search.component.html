@@ -1,0 +1,39 @@
+<form [formGroup] = "searchForm">
+        <mat-form-field class="flight-form-field" appearance="outline">
+            <mat-label>Departure</mat-label>
+            <input matInput type="text" formControlName="sourceCity" required>
+        </mat-form-field>
+        <mat-form-field class="flight-form-field" appearance="outline">
+            <mat-label>Destination</mat-label>
+            <input matInput type="text" formControlName="destinationCity" required>
+        </mat-form-field>
+        <div class="row">
+            <mat-form-field class="flight-form-field-50" appearance="outline">
+                <mat-label>Depart date</mat-label>
+                <input matInput [matDatepicker]="departureDate" formControlName="departureDate" required>
+                <mat-datepicker-toggle matSuffix [for]="departureDate"></mat-datepicker-toggle>
+                <mat-datepicker #departureDate></mat-datepicker>
+              </mat-form-field>
+              <mat-form-field class="flight-form-field-50" appearance="outline">
+                <mat-label>Return date</mat-label>
+                <input matInput [matDatepicker]="returnDepartureDate" formControlName="returnDepartureDate" required>
+                <mat-datepicker-toggle matSuffix [for]="returnDepartureDate"></mat-datepicker-toggle>
+                <mat-datepicker #returnDepartureDate></mat-datepicker>
+              </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field class="flight-form-field-50" appearance="outline">
+                <mat-label>Travelers</mat-label>
+                <input matInput type="text" formControlName="travellers" required>
+            </mat-form-field>
+            <mat-form-field class="flight-form-field-50" appearance="outline">
+                <mat-label>Class</mat-label>
+                <input matInput type="text" formControlName="class" required>
+            </mat-form-field>
+        </div>
+
+        <div class="registration-button">
+            <button [disabled] = "!searchForm.valid" type="button" (click) ="searchFlight()" class="search-button" mat-raised-button color="primary" matTooltip="Search Flight" [routerLink] = "['/searchList']">Search flights</button>
+          </div>
+
+</form>

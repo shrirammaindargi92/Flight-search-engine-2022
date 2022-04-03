@@ -1,0 +1,320 @@
+{
+    "cities": {
+        "results": [
+                {
+               "cityName": "Mumbai",
+               "cityAirportName": "Chhatrapati Shivaji International Airport"
+                },
+                 {
+               "cityName": "Delhi",
+               "cityAirportName": "Indira Gandhi International Airport"
+                },
+                 {
+               "cityName": "Car Nicobar",
+               "cityAirportName": "Car Nicobar Air Force Base"
+                },
+                 {
+               "cityName": "Campbell Bay",
+               "cityAirportName": "INS Baaz"
+                },
+                {
+               "cityName": "Kadapa",
+               "cityAirportName": "Yeduguri Sandanti Rajashekhar Reddy Airport"
+                },
+                {
+               "cityName": "Port Blair",
+               "cityAirportName": "Veer Savarkar International Airport"
+                },
+                {
+               "cityName": "Tirupati",
+               "cityAirportName": "Tirupati International Airport"
+                },
+                {
+               "cityName": "Guwahati",
+               "cityAirportName": "Lokpriya Gopinath Bordoloi International Airport"
+                },
+                {
+               "cityName": "Ahmedabad",
+               "cityAirportName": "Sardar Vallabhbhai Patel International Airport"
+                },
+                {
+               "cityName": "Dholera",
+               "cityAirportName": "Dholera International Airport"
+                },
+                {
+               "cityName": "Jammu",
+               "cityAirportName": "Jammu Airport"
+                },
+                {
+               "cityName": "Srinagar",
+               "cityAirportName": "Sheikh ul-Alam International Airport"
+                },
+                {
+               "cityName": "Mysore",
+               "cityAirportName": "Mysore Airport"
+                },
+                {
+               "cityName": "Indore",
+               "cityAirportName": "Devi Ahilyabai Holkar International Airport"
+                },
+                {
+               "cityName": "Kolhapur",
+               "cityAirportName": "Chhatrapati Rajaram Maharaj Airport"
+                },
+                {
+               "cityName": "Nagpur",
+               "cityAirportName": "Dr. Babasaheb Ambedkar International Airport"
+                },
+                {
+               "cityName": "Nanded",
+               "cityAirportName": "Shri Guru Gobind Singh Ji Airport"
+                }
+        ]
+    }
+,
+    "flights": {
+        "results":[
+                {
+                    "id": 1,
+                    "fare": 25148,
+                    "sourceCity": "Mumbai",
+                    "destinationCity": "Delhi",
+                    "departureDate": "2018-10-03",
+                    "departureTime": "12:00",
+                    "arrivalTime": "18:00",
+                    "flightCode": "AI-200",
+                    "returnDepartureDate": "2018-10-04",
+                    "returnDepartureTime": "12:00",
+                    "returnArrivalTime": "18:00",
+                    "returnFlightCode": "AI-201",
+                    "airlineName": "Air India",
+                    "class": "Economy"
+                },
+                {
+                    "id": 2,
+                    "fare": 42000,
+                    "sourceCity": "Mumbai",
+                    "destinationCity": "Delhi",
+                    "departureDate": "2019-02-10",
+                    "departureTime": "21:00",
+                    "arrivalTime": "23:30",
+                    "flightCode": "AI-300",
+                    "returnDepartureDate": "2019-02-11",
+                    "returnDepartureTime": "04:00",
+                    "returnArrivalTime": "09:00",
+                    "returnFlightCode": "AI-301",
+                    "airlineName": "Air India",
+                    "class": "Business"
+                },
+                {
+                    "id": 3,
+                    "fare": 100000,
+                    "sourceCity": "Mumbai",
+                    "destinationCity": "Delhi",
+                    "departureDate": "2019-10-27",
+                    "departureTime": "05:20",
+                    "arrivalTime": "07:00",
+                    "flightCode": "AI-203",
+                    "returnDepartureDate": "2019-10-28",
+                    "returnDepartureTime": "12:00",
+                    "returnArrivalTime": "13:40",
+                    "returnFlightCode": "AI-204",
+                    "airlineName": "Air India",
+                    "class": "Business"
+                },
+                {
+                    "id": 4,
+                    "fare": 68241,
+                    "sourceCity": "Mumbai",
+                    "destinationCity": "Delhi",
+                    "departureDate": "2019-10-20",
+                    "departureTime": "11:00",
+                    "arrivalTime": "13:00",
+                    "flightCode": "AI-215",
+                    "returnDepartureDate": "2018-10-21",
+                    "returnDepartureTime": "17:00",
+                    "returnArrivalTime": "19:00",
+                    "returnFlightCode": "AI-216",
+                    "airlineName": "Air India",
+                    "class": "Business"
+                },
+                {
+                    "id": 5,
+                    "fare": 60000,
+                    "sourceCity": "Delhi",
+                    "destinationCity": "Tirupati",
+                    "departureDate": "2018-10-29",
+                    "departureTime": "04:00",
+                    "arrivalTime": "07:00",
+                    "flightCode": "JA-100",
+                    "returnDepartureDate": "2018-10-30",
+                    "returnDepartureTime": "11:00",
+                    "returnArrivalTime": "13:00",
+                    "returnFlightCode": "JA-101",
+                    "airlineName": "Air India",
+                    "class": "Business"
+                },
+                {
+                    "id": 6,
+                    "fare": 54287,
+                    "sourceCity": "Delhi",
+                    "destinationCity": "Port Blair",
+                    "departureDate": "2018-11-13",
+                    "departureTime": "13:30",
+                    "arrivalTime": "21:30",
+                    "flightCode": "JA-102",
+                    "returnDepartureDate": "2018-11-19",
+                    "returnDepartureTime": "12:00",
+                    "returnArrivalTime": "18:00",
+                    "returnFlightCode": "JA-103",
+                    "airlineName": "Air India",
+                    "class": "Economy"
+                },
+                {
+                    "id": 7,
+                    "fare": 45000,
+                    "sourceCity": "Car Nicobar",
+                    "destinationCity": "Port Blair",
+                    "departureDate": "2018-10-08",
+                    "departureTime": "17:00",
+                    "arrivalTime": "22:50",
+                    "flightCode": "AA-151",
+                    "returnDepartureDate": "2018-10-16",
+                    "returnDepartureTime": "12:00",
+                    "returnArrivalTime": "18:00",
+                    "returnFlightCode": "AA-152",
+                    "airlineName": "Air India",
+                    "class": "Economy"
+                },
+                {
+                    "id": 8,
+                    "fare": 40000,
+                    "sourceCity": "Guwahati",
+                    "destinationCity": "Ahmedabad",
+                    "departureDate": "2019-01-03",
+                    "departureTime": "00:40",
+                    "arrivalTime": "04:10",
+                    "flightCode": "AA-153",
+                    "returnDepartureDate": "2018-02-16",
+                    "returnDepartureTime": "06:00",
+                    "returnArrivalTime": "10:30",
+                    "returnFlightCode": "AA-154",
+                    "airlineName": "Air India",
+                    "class": "Economy"
+                },
+                {
+                    "id": 9,
+                    "fare": 68700,
+                    "sourceCity": "Dholera",
+                    "destinationCity": "Jammu",
+                    "departureDate": "2018-12-10",
+                    "departureTime": "19:20",
+                    "arrivalTime": "23:00",
+                    "flightCode": "I-100",
+                    "returnDepartureDate": "2018-12-16",
+                    "returnDepartureTime": "18:00",
+                    "returnArrivalTime": "22:00",
+                    "returnFlightCode": "I-101",
+                    "airlineName": "Air India",
+                    "class": "Economy"
+                },
+                {
+                    "id": 10,
+                    "fare": 72000,
+                    "sourceCity": "Srinagar",
+                    "destinationCity": "Mysore",
+                    "departureDate": "2018-10-16",
+                    "departureTime": "05:30",
+                    "arrivalTime": "11:40",
+                    "flightCode": "I-102",
+                    "returnDepartureDate": "2018-12-16",
+                    "returnDepartureTime": "00:00",
+                    "returnArrivalTime": "06:00",
+                    "returnFlightCode": "I-103",
+                    "airlineName": "Air India",
+                    "class": "Economy"
+                },
+                {
+                    "id": 11,
+                    "fare": 22000,
+                    "sourceCity": "Indore",
+                    "destinationCity": "Kolhapur",
+                    "departureDate": "2018-11-12",
+                    "departureTime": "07:00",
+                    "arrivalTime": "11:00",
+                    "flightCode": "I-104",
+                    "returnDepartureDate": "2018-11-21",
+                    "returnDepartureTime": "16:00",
+                    "returnArrivalTime": "21:00",
+                    "returnFlightCode": "I-105",
+                    "airlineName": "Air India",
+                    "class": "Economy"
+                },
+                {
+                    "id": 12,
+                    "fare": 4000,
+                    "sourceCity": "Nagpur",
+                    "destinationCity": "Nanded",
+                    "departureDate": "2018-11-22",
+                    "departureTime": "21:00",
+                    "arrivalTime": "23:30",
+                    "flightCode": "SI-103",
+                    "returnDepartureDate": "2018-11-29",
+                    "returnDepartureTime": "12:00",
+                    "returnArrivalTime": "21:40",
+                    "returnFlightCode": "SI-104",
+                    "airlineName": "Air India",
+                    "class": "Economy"
+                },
+                {
+                    "id": 13,
+                    "fare": 23000,
+                    "sourceCity": "Ahmedabad",
+                    "destinationCity": "Kolhapur",
+                    "departureDate": "2018-12-10",
+                    "departureTime": "04:40",
+                    "arrivalTime": "12:00",
+                    "flightCode": "GA-300",
+                    "returnDepartureDate": "2018-12-18",
+                    "returnDepartureTime": "14:00",
+                    "returnArrivalTime": "18:00",
+                    "returnFlightCode": "GA-301",
+                    "airlineName": "Air India",
+                    "class": "Business"
+                },
+                {
+                    "id": 14,
+                    "fare": 150000,
+                    "sourceCity": "Jammu",
+                    "destinationCity": "Port Blair",
+                    "departureDate": "2018-11-13",
+                    "departureTime": "12:00",
+                    "arrivalTime": "14:00",
+                    "flightCode": "SJ-500",
+                    "returnDepartureDate": "2019-10-16",
+                    "returnDepartureTime": "12:00",
+                    "returnArrivalTime": "18:00",
+                    "returnFlightCode": "SJ-501",
+                    "airlineName": "Air India",
+                    "class": "Business"
+                },
+                {
+                    "id": 15,
+                    "fare": 5000,
+                    "sourceCity": "Mysore",
+                    "destinationCity": "Mumbai",
+                    "departureDate": "2018-12-31",
+                    "departureTime": "13:50",
+                    "arrivalTime": "17:00",
+                    "flightCode": "SJ-502",
+                    "returnDepartureDate": "2019-01-16",
+                    "returnDepartureTime": "17:00",
+                    "returnArrivalTime": "20:00",
+                    "returnFlightCode": "SJ-502",
+                    "airlineName": "Air India",
+                    "class": "Business"
+                }
+        ]
+    },
+    "classList":["Economy", "Business"]
+}

@@ -1,0 +1,59 @@
+  /* Small mobile size viewport */
+@media only screen and (max-width: 600px) {
+  :host {
+    margin-top: 28%;
+  }
+  .flight-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .flight-details {
+    margin: 17% 0 5% 0
+  }
+  .name-time-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .search-row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
+  }
+  .search-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .class-name {
+      width: 30%;
+      height: 30%;
+      background-color: #673ab7;
+      color: white;
+      text-align-last: "center";
+  }
+  .flight-airline-name {
+      font-size: 16;
+      font-weight: 600;
+      margin-bottom: 3%;
+  }
+  .class-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .action-panel {
+    position: fixed;
+    bottom: 60px;
+    left: 107px;
+    width: 100%;
+    z-index: 999999;
+  }
+  .action-chip {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+}

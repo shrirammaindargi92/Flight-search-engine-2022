@@ -1,0 +1,10 @@
+<div class="header">
+    <button
+        mat-icon-button
+        (click)="goBack()" 
+        class="back-button" 
+        *ngIf = "_commonUtilityService.currentRoute== '/searchList'">
+        <mat-icon class="back-buttton-icon">arrow_back</mat-icon>
+    </button>
+    <p class="header-heading">{{_commonUtilityService.headerName}}</p>
+</div>

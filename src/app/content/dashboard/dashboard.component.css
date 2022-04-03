@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+  :host {
+    margin-top: 17%;
+  }
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
