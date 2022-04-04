@@ -4,6 +4,7 @@ import * as flights from '../../../../utils/data.json';
 import { Location } from '@angular/common';
 import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet';
 import { BottomSheetComponent } from '../../../../utils/bottom-sheet/bottom-sheet.component';
+import { FlightListService } from './flight-list.service';
 @Component({
   selector: 'app-flight-list',
   templateUrl: './flight-list.component.html',
@@ -14,7 +15,8 @@ export class FlightListComponent implements OnInit {
   public classList: String[];
   constructor(public _commonUtilityService: CommonUtilityService,
               public _location: Location,
-              private _bottomSheet: MatBottomSheet) { }
+              private _bottomSheet: MatBottomSheet,
+              private _flightListService: FlightListService) { }
 
   ngOnInit(): void {
     this.classList = flights.classList;
@@ -24,7 +26,7 @@ export class FlightListComponent implements OnInit {
   }
 
   public filterList(): void {
-    this.flightList = flights.flights.results.filter(flightElement => 
+    this.flightList = this._flightListService.getData().filter(flightElement => 
       
       (flightElement.sourceCity.toLocaleLowerCase() == this._commonUtilityService.searchParam.sourceCity.toLocaleLowerCase())
       && (flightElement.destinationCity.toLocaleLowerCase() == this._commonUtilityService.searchParam.destinationCity.toLocaleLowerCase())
