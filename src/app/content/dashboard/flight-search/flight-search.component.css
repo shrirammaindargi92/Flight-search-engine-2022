@@ -1,3 +1,13 @@
+.search-form {
+    padding: 20px
+}
+.fixed-width {
+    width: 300px
+}
+.mr-50 {
+    margin-right: 50px;
+}
+
 /* Small mobile size viewport */
 @media only screen and (max-width: 600px) {
     .row {

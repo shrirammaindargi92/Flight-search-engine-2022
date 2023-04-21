@@ -23,6 +23,7 @@ export class FlightSearchComponent implements OnInit {
       returnDepartureDate: new FormControl(''),
       travellers: new FormControl(''),
       class: new FormControl(''),
+      idProof: new FormControl(''),
     });
     if (localStorage.getItem('searchParam')) {
       let searchParams = JSON.parse(localStorage.getItem('searchParam'));
@@ -33,6 +34,7 @@ export class FlightSearchComponent implements OnInit {
         returnDepartureDate: searchParams['returnDepartureDate'],
         travellers: searchParams['travellers'],
         class: searchParams['class'],
+        idProof: searchParams['idProof'],
       });
     }
   }
