@@ -8,6 +8,7 @@ import { RouterModule, Route} from '@angular/router';
 import {routes} from '../utils/routes';
 import { MatTabsModule } from '@angular/material/tabs';
 import { FlightSearchComponent } from './content/dashboard/flight-search/flight-search.component';
+import { SearchComponent } from './content/dashboard/bus-search/search.component';
 import { MatCardModule } from '@angular/material/card';
 import { DashboardComponent } from './content/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,6 +33,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     FooterComponent,
     ContentComponent,
     FlightSearchComponent,
+    SearchComponent,
     DashboardComponent,
     FlightListComponent,
     BottomSheetComponent
