@@ -1,0 +1,10 @@
+<form [formGroup] = "searchForm" class="search-form">
+        <mat-form-field class="form-field fixed-width mr-50" appearance="outline">
+            <mat-label>Departure</mat-label>
+            <input matInput type="text" formControlName="sourceCity" required>
+        </mat-form-field>
+        <mat-form-field class="form-field fixed-width" appearance="outline">
+            <mat-label>Destination</mat-label>
+            <input matInput type="text" formControlName="destinationCity" required>
+        </mat-form-field>
+</form>

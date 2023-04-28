@@ -15,10 +15,10 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    .flight-form-field {
+    .form-field {
         width: 100%;
     }
-    .flight-form-field-50 {
+    .form-field-50 {
         width: 48%
     }
     .search-button {
